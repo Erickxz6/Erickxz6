@@ -1,82 +1,82 @@
-<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&amp;family=Poppins:wght@800&amp;display=swap');
+      
+      .bg { 
+        fill: #0d1117; /* Color de fondo estilo GitHub Dark */
+      }
+      
+      /* Estilos para el texto principal en 3D */
+      .title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 85px;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+      .layer3 { fill: #000000; transform: translate(-8px, 8px); }
+      .layer2 { fill: #1f6feb; transform: translate(-4px, 4px); }
+      .layer1 { fill: #58a6ff; transform: translate(0px, 0px); }
+      
+      /* Estilos para el subtítulo */
+      .subtitle {
+        font-family: 'Fira Code', monospace;
+        font-size: 20px;
+        fill: #8b949e;
+        animation: pulse 2.5s infinite;
+      }
+      
+      /* Decoraciones de código flotantes */
+      .code-symbol {
+        font-family: 'Fira Code', monospace;
+        font-size: 28px;
+        fill: #238636;
+        opacity: 0.3;
+        animation: float-random 4s ease-in-out infinite alternate;
+      }
 
-<img src="assets/battle.svg" alt="Animación pixelada: Erick derrota a un bug con HTML, CSS, JavaScript y React" width="100%" />
+      /* Animación de levitación para el nombre */
+      .floating-group {
+        animation: float 3s ease-in-out infinite;
+      }
 
-</div>
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
 
-<br>
+      @keyframes float-random {
+        0% { transform: translateY(0) rotate(-5deg); }
+        100% { transform: translateY(-25px) rotate(15deg); }
+      }
+    </style>
+  </defs>
 
-## 👨‍💻 Sobre mí
+  <!-- Fondo oscuro con bordes redondeados -->
+  <rect class="bg" width="100%" height="100%" rx="15" />
 
-- 🎓 Tecnólogo en formación en **Análisis y Desarrollo de Software** en el SENA.
-- 🌐 Me enfoco en el **desarrollo web**: me gusta crear interfaces claras y funcionales.
-- 🎨 Diseño prototipos en **Figma** antes de llevarlos a código.
-- 🗣️ Inglés nivel **A2**, mejorando cada día.
-- 📍 Arjona, Bolívar, Colombia.
+  <!-- Símbolos de código flotando en el fondo -->
+  <text x="120" y="80" class="code-symbol" style="animation-delay: 0s;">&lt;/&gt;</text>
+  <text x="680" y="240" class="code-symbol" style="animation-delay: 1.2s;">{}</text>
+  <text x="650" y="70" class="code-symbol" style="animation-delay: 0.5s;">()</text>
+  <text x="90" y="220" class="code-symbol" style="animation-delay: 1.8s;">#</text>
+  <text x="400" y="50" class="code-symbol" style="animation-delay: 0.8s;">;</text>
 
-<br>
+  <!-- Grupo central animado (Nombre 3D) -->
+  <g class="floating-group">
+    <text x="400" y="160" text-anchor="middle" class="title layer3">Erickxz6</text>
+    <text x="400" y="160" text-anchor="middle" class="title layer2">Erickxz6</text>
+    <text x="400" y="160" text-anchor="middle" class="title layer1">Erickxz6</text>
+  </g>
 
-## 🎒 Mi mochila de herramientas
-
-<div align="center">
-
-<img src="assets/mochila.svg" alt="Mochila pixelada con mis herramientas: HTML, CSS, JavaScript, React, Bootstrap, Java, bases de datos, Figma, Git y GitHub" width="100%" />
-
-</div>
-
-| Área | Herramientas |
-|------|--------------|
-| 🌐 **Desarrollo web** | HTML5 · CSS3 · JavaScript · React · Bootstrap |
-| ⚙️ **Programación** | Java |
-| 🗄️ **Datos** | Bases de datos |
-| 🎨 **Diseño** | Figma |
-| 🔧 **Control de versiones y despliegue** | Git · GitHub · GitHub Pages |
-
-<br>
-
-## 🚀 Proyectos destacados
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🧢 Maison Merch</h3>
-      <p>Tienda en línea de gorras con catálogo filtrable por categorías, carrito de compras, promociones y formulario de suscripción con validación.</p>
-      <p>
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-      </p>
-      <a href="https://erickxz6.github.io/MaisonMerch/">🔗 Ver demo</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🎮 PlayEnglish</h3>
-      <p>Plataforma web para aprender inglés jugando: niveles A1–C2, ejercicios, sistema de XP y rachas, diccionario, comunidad y modo claro/oscuro.</p>
-      <p>
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-      </p>
-      <a href="https://erickxz6.github.io/english-learning/#landing">🔗 Ver demo</a>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-## 📊 Estadísticas de GitHub
-
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Erickxz6&show_icons=true&theme=merko&hide_border=true" alt="Estadísticas de GitHub" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Erickxz6&layout=compact&theme=merko&hide_border=true" alt="Lenguajes más usados" />
-</div>
-
-<br>
-
-## 📫 Contacto
-
-<div align="center">
-
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:erickcantilloh@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Erickxz6)
-
-</div>
+  <!-- Subtítulo de profesión -->
+  <text x="400" y="235" text-anchor="middle" class="subtitle">
+    &gt; Estudiante de Análisis y Desarrollo de Software_
+  </text>
+</svg>
