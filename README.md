@@ -1,8 +1,6 @@
-<div align="center">
-
-<img src="assets/battle.svg" alt="Animación pixelada: Erick derrota a un bug con HTML, CSS, JavaScript y React" width="100%" />
-
-</div>
+<p align="center">
+  <img src="erickxz6.svg" alt="Animación de Erickxz6">
+</p>
 
 <br>
 
