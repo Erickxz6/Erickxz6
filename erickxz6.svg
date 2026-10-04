@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&amp;family=Poppins:wght@800&amp;display=swap');
+      
+      .bg { 
+        fill: #0d1117; /* Color de fondo estilo GitHub Dark */
+      }
+      
+      /* Estilos para el texto principal en 3D */
+      .title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 85px;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+      .layer3 { fill: #000000; transform: translate(-8px, 8px); }
+      .layer2 { fill: #1f6feb; transform: translate(-4px, 4px); }
+      .layer1 { fill: #58a6ff; transform: translate(0px, 0px); }
+      
+      /* Estilos para el subtítulo */
+      .subtitle {
+        font-family: 'Fira Code', monospace;
+        font-size: 20px;
+        fill: #8b949e;
+        animation: pulse 2.5s infinite;
+      }
+      
+      /* Decoraciones de código flotantes */
+      .code-symbol {
+        font-family: 'Fira Code', monospace;
+        font-size: 28px;
+        fill: #238636;
+        opacity: 0.3;
+        animation: float-random 4s ease-in-out infinite alternate;
+      }
+
+      /* Animación de levitación para el nombre */
+      .floating-group {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+
+      @keyframes float-random {
+        0% { transform: translateY(0) rotate(-5deg); }
+        100% { transform: translateY(-25px) rotate(15deg); }
+      }
+    </style>
+  </defs>
+
+  <!-- Fondo oscuro con bordes redondeados -->
+  <rect class="bg" width="100%" height="100%" rx="15" />
+
+  <!-- Símbolos de código flotando en el fondo -->
+  <text x="120" y="80" class="code-symbol" style="animation-delay: 0s;">&lt;/&gt;</text>
+  <text x="680" y="240" class="code-symbol" style="animation-delay: 1.2s;">{}</text>
+  <text x="650" y="70" class="code-symbol" style="animation-delay: 0.5s;">()</text>
+  <text x="90" y="220" class="code-symbol" style="animation-delay: 1.8s;">#</text>
+  <text x="400" y="50" class="code-symbol" style="animation-delay: 0.8s;">;</text>
+
+  <!-- Grupo central animado (Nombre 3D) -->
+  <g class="floating-group">
+    <text x="400" y="160" text-anchor="middle" class="title layer3">Erickxz6</text>
+    <text x="400" y="160" text-anchor="middle" class="title layer2">Erickxz6</text>
+    <text x="400" y="160" text-anchor="middle" class="title layer1">Erickxz6</text>
+  </g>
+
+  <!-- Subtítulo de profesión -->
+  <text x="400" y="235" text-anchor="middle" class="subtitle">
+    &gt; Estudiante de Análisis y Desarrollo de Software_
+  </text>
+</svg>
