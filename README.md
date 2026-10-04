@@ -28,7 +28,7 @@
 |------|--------------|
 | 🌐 **Desarrollo web** | HTML5 · CSS3 · JavaScript · React · Bootstrap |
 | ⚙️ **Programación** | Java |
-| 🗄️ **Datos** | Bases de datos |
+| 🗄️ **Base de datos** | postgrees, mySQL |
 | 🎨 **Diseño** | Figma |
 | 🔧 **Control de versiones y despliegue** | Git · GitHub · GitHub Pages |
 
